@@ -27,7 +27,7 @@ services:
 
   postgres:
     image: postgres:13.3
-    container_name: postgres-lab3
+    container_name: postgres-lab4
     environment:
       POSTGRES_DB: "apidemo-db"
       POSTGRES_USER: "postgres"
@@ -43,7 +43,7 @@ services:
 
   keydb:
     image: "eqalpha/keydb:x86_64_v5.3.3"
-    container_name: keydb-lab3
+    container_name: keydb-lab4
     command: "keydb-server /etc/keydb/redis.conf --server-threads 2"
     volumes:
       - "data:/data"
